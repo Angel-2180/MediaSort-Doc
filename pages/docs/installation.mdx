@@ -1,0 +1,34 @@
+---
+title: MediaSort - Installation
+---
+
+{<h1>MediaSort - Installation</h1>}
+
+import { Callout, Cards } from "nextra/components";
+import { FaWindows, FaLinux, FaApple } from "react-icons/fa";
+
+<Callout emoji="❌">
+  **MediaSort** is not yet supported on **Linux** or **macOS**. Please check
+  back later.
+</Callout>
+
+<Cards>
+  <Cards.Card
+    icon={<FaWindows />}
+    title="Windows"
+    href="/docs/installation/windows"
+    arrow
+  />
+  <Cards.Card
+    icon={<FaLinux />}
+    title="Linux"
+    href="/docs/installation/linux"
+    arrow
+  />
+  <Cards.Card
+    icon={<FaApple />}
+    title="macOS"
+    href="/docs/installation/mac"
+    arrow
+  />
+</Cards>

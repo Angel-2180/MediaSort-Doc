@@ -1,5 +1,16 @@
 export default {
-  index: "Introduction",
-  contact: "Contact Us",
-  about: "About Us",
+  index: {
+    title: "Introduction",
+    type: "page",
+    display: "hidden",
+  },
+  docs: {
+    title: "Docs",
+    type: "page",
+  },
+  changelog: {
+    title: "Changelog ↗",
+    href: "https://github.com/Angel-2180/MediaSort/releases",
+    newWindow: true,
+  },
 };

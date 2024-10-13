@@ -1,0 +1,25 @@
+---
+title: MediaSort - Windows Installation
+description: Follow the steps below to install MediaSort on Windows.
+---
+
+import { Callout, Tabs } from "nextra/components";
+
+Follow the steps below to install MediaSort on Windows.
+
+{<h1>MediaSort - Windows Installation</h1>}
+
+<Tabs
+  items={["Precompiled Binaries (CMD)", "Precompiled Binaries (PowerShell)"]}
+>
+  <Tabs.Tab>
+    ```bash copy
+    curl -L https://github.com/Angel-2180/MediaSort/releases/download/v0.4.0/MediaSort_Installer.exe -o MediaSort.exe
+    ```
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```ps1 copy
+    Invoke-WebRequest https://github.com/Angel-2180/MediaSort/releases/download/v0.4.0/MediaSort_Installer.exe -o MediaSort.exe
+    ```
+  </Tabs.Tab>
+</Tabs>
