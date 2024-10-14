@@ -3,7 +3,7 @@ title: MediaSort - Build from sources
 description: Follow the steps below to build MediaSort from sources.
 ---
 
-import { Callout, Tabs } from "nextra/components";
+import { Callout, Steps } from "nextra/components";
 
 # Build from sources
 
@@ -15,13 +15,14 @@ Follow the steps below to build MediaSort from sources.
 
 ## Prerequisites
 
-- [Git](https://git-scm.com/)
-- [Rust](https://www.rust-lang.org/tools/install) 1.56.1 or later
+- [Git](https://git-scm.com/) (latest version)
+- [Rust](https://www.rust-lang.org/tools/install) (1.56.1 or later)
 - [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) (generaly installed with Rust)
 
 ## Builds steps
 
-1. **Clone the repository**
+<Steps>
+### Clone the repository
 Open your terminal and run the following command:
 
 ```bash copy
@@ -29,19 +30,20 @@ git clone https://github.com/Angel-2180/MediaSort.git
 cd MediaSort
 ```
 
-2. **Build the project**
+### Build the project
 Run the following command to build the project:
 
 ```bash copy
 cargo build --release
 ```
 
-3. **Run the project**
+### Run the project
 After the build is complete, you can run the project using the following command:
 
 ```bash copy
 MediaSort --help
 ```
+</Steps>
 
 <Callout emoji="🚀">
   It's recommanded to add the executable to the PATH to run it from anywhere.
@@ -53,26 +55,41 @@ MediaSort --help
 
 To update the project, you can run the following commands:
 
-1. **Open the project directory**
+<Steps>
+### Open the project directory
+```bash copy
+cd MediaSort
+```
 
-2. **Pull the latest changes**
+### Pull the latest changes
+
+<Callout emoji="🔨">
+  Make sure you have no local changes before pulling the latest changes.
+</Callout>
+
+Use git to pull the latest changes from the upstream repository:
 
 ```bash copy
 git pull
 ```
 
-3. **Build the project**
+### Rebuild the project
+
+Using cargo, you can rebuild the project with the following command:
 
 ```bash copy
 cargo build --release
 ```
 
-4. **Run the project**
+### Run the project
+
+After the build is complete, you can run the `help` command to see if everything is working correctly:
 
 ```bash copy
 MediaSort --help
 ```
+</Steps>
 
 ## Troubleshooting
 
-If you encounter any issues while building the project, please refer to the [troubleshooting guide](/docs/troubleshooting).
+If you encounter any issues while building the project, please address them in the [issues section](https://github.com/Angel-2180/MediaSort/issues) on GitHub. We will do our best to help you resolve them.
