@@ -1,0 +1,78 @@
+---
+title: MediaSort - Build from sources
+description: Follow the steps below to build MediaSort from sources.
+---
+
+import { Callout, Tabs } from "nextra/components";
+
+# Build from sources
+
+Follow the steps below to build MediaSort from sources.
+
+<Callout emoji="❌">
+  **MediaSort** is not yet officialy supported on **Linux** or **macOS**. Try it at your own risk.
+</Callout>
+
+## Prerequisites
+
+- [Git](https://git-scm.com/)
+- [Rust](https://www.rust-lang.org/tools/install) X.XX or later
+- [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) (generaly installed with Rust)
+
+## Builds steps
+
+1. **Clone the repository**
+Open your terminal and run the following command:
+
+```bash copy
+git clone https://github.com/Angel-2180/MediaSort.git
+cd MediaSort
+```
+
+2. **Build the project**
+Run the following command to build the project:
+
+```bash copy
+cargo build --release
+```
+
+3. **Run the project**
+After the build is complete, you can run the project using the following command:
+
+```bash copy
+MediaSort --help
+```
+
+<Callout emoji="🚀">
+  It's recommanded to add the executable to the PATH to run it from anywhere.
+  * [How to add to PATH on Windows 10](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+  * [How to add to PATH on linux/macOS](https://stackoverflow.com/questions/14637979/how-to-permanently-set-path-on-linux-unix)
+</Callout>
+
+## Updating the project
+
+To update the project, you can run the following commands:
+
+1. **Open the project directory**
+
+2. **Pull the latest changes**
+
+```bash copy
+git pull
+```
+
+3. **Build the project**
+
+```bash copy
+cargo build --release
+```
+
+4. **Run the project**
+
+```bash copy
+MediaSort --help
+```
+
+## Troubleshooting
+
+If you encounter any issues while building the project, please refer to the [troubleshooting guide](/docs/troubleshooting).
