@@ -13,4 +13,5 @@ export default {
     href: "https://github.com/Angel-2180/MediaSort/releases",
     newWindow: true,
   },
+  contributing: "Contributing",
 };
