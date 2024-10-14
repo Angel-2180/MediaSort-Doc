@@ -9,17 +9,30 @@ Follow the steps below to install MediaSort on Windows.
 
 {<h1>MediaSort - Windows Installation</h1>}
 
+<Callout emoji="💡">
+  There's an installer available for Windows. You can download it from the [GitHub release](https://github.com/Angel-2180/MediaSort/releases/latest)
+  * The installer will add the executable to the PATH automatically.
+</Callout>
+
+You can download the precompiled binaries from [GitHub release](https://github.com/Angel-2180/MediaSort/releases/latest), or using CLI:
+
 <Tabs
   items={["Precompiled Binaries (CMD)", "Precompiled Binaries (PowerShell)"]}
 >
   <Tabs.Tab>
     ```bash copy
-    curl -L https://github.com/Angel-2180/MediaSort/releases/download/v0.4.0/MediaSort_Installer.exe -o MediaSort.exe
+    curl -L https://github.com/Angel-2180/MediaSort/releases/download/v0.4.0/MediaSort.exe -o MediaSort.exe
     ```
   </Tabs.Tab>
   <Tabs.Tab>
     ```ps1 copy
-    Invoke-WebRequest https://github.com/Angel-2180/MediaSort/releases/download/v0.4.0/MediaSort_Installer.exe -o MediaSort.exe
+    Invoke-WebRequest https://github.com/Angel-2180/MediaSort/releases/download/v0.4.0/MediaSort.exe -o MediaSort.exe
     ```
   </Tabs.Tab>
 </Tabs>
+
+{/* Inform the user to add the executable to the os PATH */}
+<Callout emoji="🚀">
+  It's recommanded to add the executable to the PATH to run it from anywhere.
+  * [How to add to PATH on Windows 10](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/)
+</Callout>
